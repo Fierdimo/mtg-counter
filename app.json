@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "mtg-counter",
+    "name": "MTG Counter",
     "slug": "mtg-counter",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,10 +24,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.fierdimo.mtgcounter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "daf7a70c-9e6f-4539-9ddc-c4e4f4b6c685"
+      }
     }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1013951831230804~7382343563"
   }
 }

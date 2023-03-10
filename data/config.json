@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Lifes",
+    "icon": "shield-sword",
+    "value": 20
+  },
+  {
+    "label": "Energy",
+    "icon": "lightning-bolt-circle",
+    "value": 0
+  },
+  {
+    "label": "Poison",
+    "icon": "skull",
+    "value": 0
+  },
+  {
+    "label": "Experience",
+    "icon": "account-plus",
+    "value": 0
+  },
+  {
+    "label": "Ticket",
+    "icon": "ticket-confirmation",
+    "value": 0
+  }
+]

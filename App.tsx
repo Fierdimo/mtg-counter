@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useKeepAwake } from 'expo-keep-awake';
+import { Flex } from '@react-native-material/core'
+import Constants from "expo-constants";
+
+import 'expo-dev-client'
+import MainScreen from './main/MainScreen';
+
 
 export default function App() {
+  useKeepAwake();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <Flex fill>
+      <MainScreen /> 
       <StatusBar style="auto" />
-    </View>
+    </Flex>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
