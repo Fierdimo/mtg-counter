@@ -1,3 +1,4 @@
+import { Flex } from "@react-native-material/core";
 import React from "react";
 import { Dimensions } from "react-native";
 import Carousel from "react-native-snap-carousel";
@@ -10,8 +11,10 @@ type tSlide = {
   info: Iinfo;
   points: { [x: string]: number };
   setPoints: React.Dispatch<
-    React.SetStateAction<{[x: string]: number }|null>>;
+    React.SetStateAction<{ [x: string]: number } | null>
+  >;
   forceUpdate: () => void;
+  top:boolean;
 };
 
 export default function SlideCounter({
@@ -19,6 +22,7 @@ export default function SlideCounter({
   points,
   setPoints,
   forceUpdate,
+  top
 }: tSlide) {
   // window constants
   const SLIDER_WIDTH = Dimensions.get("window").width;
@@ -28,12 +32,16 @@ export default function SlideCounter({
 
   function statusCard({ item, index }: Titem) {
     return (
-      <StatusCard
+      <Flex fill style={{ justifyContent: "center" }}>
+        <StatusCard
         data={{ item, index }}
         points={points}
         setPoints={setPoints}
         forceUpdate={forceUpdate}
+        top={top}
       />
+      </Flex>
+      
     );
   }
 

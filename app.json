@@ -4,12 +4,12 @@
     "slug": "mtg-counter",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/adaptive-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -25,18 +25,18 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.fierdimo.mtgcounter"
+      "package": "com.marmo.mtgcounter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "daf7a70c-9e6f-4539-9ddc-c4e4f4b6c685"
+        "projectId": "612171af-2246-4b66-afbd-e094d7f11f7d"
       }
     }
   },
   "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-1013951831230804~7382343563"
+    "android_app_id": "ca-app-pub-3720641687450394~2391499045"
   }
 }

@@ -2,8 +2,7 @@ import { Tdata } from "./Carousell";
 
 
 export interface Iinfo { 
-    data: Tdata[];
-    color: "blue"|"red"|"white"|"black"|"green";
+    data: Tdata[]; 
 }
 
 export type BasePoints = {
